@@ -1,0 +1,78 @@
+﻿.pirho-variable
+{
+	flex-grow: 1;
+	flex-direction: row;
+}
+
+.pirho-variable__reset
+{
+	align-self: center;
+	min-width: 16px;
+	min-height: 16px;
+	max-width: 16px;
+	max-height: 16px;
+}
+
+.pirho-variable__empty
+{
+	align-self: center;
+	flex-grow: 1;
+	margin: 1px 0px;
+}
+
+.pirho-variable__bool
+{
+	align-self: center;
+	margin: 1px 0px;
+}
+
+.pirho-variable__number
+{
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.pirho-variable__number__slider
+{
+	flex-grow: 3;
+	display: none;
+}
+
+.pirho-variable__number--has-range .pirho-variable__number__slider
+{
+	display: flex;
+}
+
+.pirho-variable__number__field
+{
+	min-width: 50px;
+	margin: 1px 0px;
+	flex-grow: 1;
+}
+
+.pirho-variable__number--has-range .pirho-variable__number__field
+{
+	flex-grow: 0;
+}
+
+.pirho-variable__field
+{
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: 1px 0px;
+}
+
+.pirho-variable__field > *
+{
+	margin: 0px;
+}
+
+.pirho-variable__container
+{
+	flex-grow: 1;
+}
+
+.pirho-variable__dictionary__label
+{
+	-unity-font-style: bold;
+}

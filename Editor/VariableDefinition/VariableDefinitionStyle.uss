@@ -1,0 +1,123 @@
+﻿.pirho-variable-definition
+{
+	margin: 1px 3px;
+	flex-direction: row;
+}
+
+.pirho-variable-definition > VisualElement
+{
+	flex-grow: 1;
+}
+
+.pirho-variable-definition__container
+{
+	flex-grow: 1;
+	flex-direction: row;
+}
+
+.pirho-variable-definition__container .unity-enum-field
+{
+	flex-grow: 1;
+	max-width: none;
+}
+
+.pirho-variable-definition__name-label
+{
+}
+
+.pirho-variable-definition__name-field
+{
+	margin: 1px 0px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.pirho-variable-definition__name--none
+{
+	display: none;
+}
+
+.pirho-variable-definition__type
+{
+	max-width: 200px;
+	flex-shrink: 1;
+	margin: 1px 0px 1px 3px;
+}
+
+.pirho-variable-definition__constraint
+{
+}
+
+.pirho-variable-definition__constraint__number
+{
+	flex-direction: row;
+}
+
+.pirho-variable-definition__constraint__number__container
+{
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.pirho-variable-definition__constraint__number__container--min
+{
+}
+
+.pirho-variable-definition__constraint__number__container--max
+{
+	margin-left: 5px;
+}
+
+.pirho-variable-definition__constraint__number__label
+{
+	align-self: center;
+	margin: 0px;
+}
+
+.pirho-variable-definition__constraint__number__toggle
+{
+	align-self: center;
+	margin: 0px 5px;
+}
+
+.pirho-variable-definition__constraint__number__field
+{
+	visibility: hidden;
+	margin: 1px 0px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.pirho-variable-definition__constraint__number__field--has-value
+{
+	visibility: visible;
+}
+
+.pirho-variable-definition__constraint__number__field--min
+{
+}
+
+.pirho-variable-definition__constraint__number__field--max
+{
+}
+
+
+.pirho-variable-definition__constraint > .pirho-variable-definition__constraint__string
+{
+	margin: 1px 0px;
+}
+
+.pirho-variable-definition__constraint__object
+{
+	margin: 1px 0px;
+}
+
+.pirho-variable-definition__constraint__list__item
+{
+	margin: 1px 0px;
+}
+
+.pirho-variable-definition__constraint__schema
+{
+	margin: 1px 0px;
+}
