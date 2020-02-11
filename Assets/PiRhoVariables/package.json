@@ -1,0 +1,17 @@
+{
+	"name": "com.pirho.variables",
+	"version": "0.0.1",
+	"displayName": "PiRho Variables",
+	"description": "A system for runtime type erasure that avoids boxing",
+	"unity": "2019.3",
+	"keywords": [ "runtime", "utilities", "extensions" ],
+	"author": {
+		"name": "PiRho Soft",
+		"email": "admin@pirhosoft.com",
+		"url": "https://pirhosoft.com/"
+	},
+	"dependencies": {
+		"com.unity.addressables": "1.1.10",
+		"com.pirho.utilities": "2.1.0"
+	}
+}
