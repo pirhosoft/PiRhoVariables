@@ -22,6 +22,29 @@ namespace PiRhoSoft.Variables
 		public VariableDictionary() => SetVariables(new Dictionary<string, Variable>());
 		public VariableDictionary(IDictionary<string, Variable> variables) => SetVariables(variables);
 
+		#region Saving/Loading
+
+		public void LoadFrom(IVariableDictionary map)
+		{
+			foreach (var name in map.VariableNames)
+			{
+				var variable = map.GetVariable(name);
+				SetVariable(name, variable);
+			}
+		}
+
+		public void SaveTo(IVariableDictionary map)
+		{
+			foreach (var name in VariableNames)
+			{
+				var variable = GetVariable(name);
+				map.SetVariable(name, variable);
+			}
+		}
+
+		#endregion
+
+
 		private void SetVariables(IDictionary<string, Variable> variables)
 		{
 			_variables = variables;
