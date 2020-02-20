@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace PiRhoSoft.Variables
 {
@@ -10,8 +11,8 @@ namespace PiRhoSoft.Variables
 		public VariableType ItemType { get => _itemType; set => SetType(value); }
 		public VariableConstraint ItemConstraint { get => _itemConstraint; set => SetConstraint(value); }
 
-		private VariableType _itemType;
-		private VariableConstraint _itemConstraint;
+		[SerializeField] private VariableType _itemType;
+		[SerializeReference] private VariableConstraint _itemConstraint;
 
 		public ListConstraint()
 		{

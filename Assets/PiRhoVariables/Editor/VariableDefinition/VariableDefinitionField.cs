@@ -24,25 +24,22 @@ namespace PiRhoSoft.Variables.Editor
 
 		#endregion
 
-		private SerializedProperty _nameProperty;
-		private SerializedProperty _typeProperty;
+		private readonly VariableDefinition _definition;
+
+		private readonly SerializedProperty _nameProperty;
+		private readonly SerializedProperty _typeProperty;
 		private SerializedProperty _constraintProperty;
 		private SerializedProperty _valueProperty;
 
-		private VariableDefinition _definition;
-
-		private VisualElement _rootContainer;
-		private VisualElement _horizontalContainer;
-		private VisualElement _nameField;
-		private VisualElement _typeField;
+		private readonly VisualElement _rootContainer;
+		private readonly VisualElement _horizontalContainer;
+		private readonly VisualElement _nameField;
+		private readonly VisualElement _typeField;
+		private readonly SerializedVariableField _valueField;
 		private VisualElement _constraintField;
-		private SerializedVariableField _valueField;
 
 		public VariableDefinitionField(SerializedProperty property, bool allowNameChange)
 		{
-			var label = new Label(property.displayName);
-			label.AddToClassList(BaseField<string>.labelUssClassName);
-
 			_rootContainer = new VisualElement();
 
 			bindingPath = property.propertyPath;
@@ -68,7 +65,6 @@ namespace PiRhoSoft.Variables.Editor
 			_rootContainer.Add(_constraintField);
 			_rootContainer.Add(_valueField);
 
-			Add(label);
 			Add(_rootContainer);
 			AddToClassList(UssClassName);
 			this.AddStyleSheet(Stylesheet);
@@ -88,8 +84,7 @@ namespace PiRhoSoft.Variables.Editor
 			}
 
 			_constraintProperty = _constraintProperty.serializedObject.FindProperty(_constraintProperty.propertyPath);
-
-			_rootContainer.Remove(_constraintField);
+			_constraintField?.RemoveFromHierarchy();
 			_constraintField = CreateConstraint(_constraintProperty);
 			_rootContainer.Insert(1, _constraintField);
 		}
@@ -130,7 +125,7 @@ namespace PiRhoSoft.Variables.Editor
 
 		private VisualElement CreateType(SerializedProperty property)
 		{
-			var field = new EnumField() { tooltip = "The type of variable this definition defines" };
+			var field = new EnumField();
 			field.BindProperty(property);
 			field.AddToClassList(TypeUssClassName);
 			field.RegisterValueChangedCallback(evt => TypeChanged((VariableType)evt.newValue));
@@ -192,6 +187,7 @@ namespace PiRhoSoft.Variables.Editor
 		private SerializedVariableField CreateValue(SerializedProperty property, VariableDefinition definition)
 		{
 			var field = new SerializedVariableField(property, definition);
+			field.SetFieldLabel(null);
 			return field;
 		}
 	}

@@ -1,0 +1,52 @@
+﻿.pirho-int-constraint
+{
+	flex-direction: row;
+}
+
+.pirho-int-constraint__container
+{
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.pirho-int-constraint--min
+{
+}
+
+.pirho-int-constraint--max
+{
+	margin-left: 5px;
+}
+
+.pirho-int-constraint__label
+{
+	align-self: center;
+	margin: 0px;
+}
+
+.pirho-int-constraint__toggle
+{
+	align-self: center;
+	margin: 0px 5px;
+}
+
+.pirho-int-constraint__field
+{
+	visibility: hidden;
+	margin: 1px 0px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.pirho-int-constraint__field--has-value
+{
+	visibility: visible;
+}
+
+.pirho-int-constraint__field--min
+{
+}
+
+.pirho-int-constraint__field--max
+{
+}
