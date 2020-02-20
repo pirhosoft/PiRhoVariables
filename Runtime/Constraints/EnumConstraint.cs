@@ -13,6 +13,7 @@ namespace PiRhoSoft.Variables
 		public override VariableType Type => VariableType.Enum;
 
 		[SerializeField]
+		[NoLabel]
 		[TypePicker(typeof(Enum), false)]
 		private string _enumType;
 
