@@ -73,8 +73,22 @@ namespace PiRhoSoft.Variables.Editor
 
 		public void SetValueWithoutNotify(Variable value)
 		{
-			_value = value;
-			Refresh();
+			if (Validate(value))
+			{
+				_value = value;
+				Refresh();
+			}
+		}
+
+		private bool Validate(Variable value)
+		{
+			if (_definition != null && !_definition.IsValid(value))
+			{
+				this.SendChangeEvent(_value, _definition.Generate());
+				return false;
+			}
+
+			return true;
 		}
 
 		private void CreateElements()
