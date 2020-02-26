@@ -1,0 +1,37 @@
+[#reference/variable-definition]
+
+## VariableDefinition
+
+PiRhoSoft.Variables.VariableDefinition
+
+### Description
+
+### Constructors
+
+VariableDefinition()::
+
+VariableDefinition(string _name_)::
+
+VariableDefinition(string _name_, <<reference/variable-type.html,VariableType>> _type_)::
+
+VariableDefinition(string _name_, <<reference/variable-constraint.html,VariableConstraint>> _constraint_)::
+
+### Public Fields
+
+string _Name_::
+
+### Public Properties
+
+string _Description_ _(read only)_::
+
+<<reference/variable-type.html,VariableType>> _Type_::
+
+<<reference/variable-constraint.html,VariableConstraint>> _Constraint_::
+
+<<reference/variable.html,Variable>> _DefaultValue_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> Generate()::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_)::

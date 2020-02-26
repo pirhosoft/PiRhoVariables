@@ -1,0 +1,53 @@
+[#reference/variable-type]
+
+## VariableType
+
+PiRhoSoft.Variables.VariableType
+
+### Description
+
+### Values
+
+<<reference/variable-type.html,VariableType>> _Empty_::
+
+<<reference/variable-type.html,VariableType>> _Bool_::
+
+<<reference/variable-type.html,VariableType>> _Int_::
+
+<<reference/variable-type.html,VariableType>> _Float_::
+
+<<reference/variable-type.html,VariableType>> _Vector2Int_::
+
+<<reference/variable-type.html,VariableType>> _Vector3Int_::
+
+<<reference/variable-type.html,VariableType>> _RectInt_::
+
+<<reference/variable-type.html,VariableType>> _BoundsInt_::
+
+<<reference/variable-type.html,VariableType>> _Vector2_::
+
+<<reference/variable-type.html,VariableType>> _Vector3_::
+
+<<reference/variable-type.html,VariableType>> _Vector4_::
+
+<<reference/variable-type.html,VariableType>> _Quaternion_::
+
+<<reference/variable-type.html,VariableType>> _Rect_::
+
+<<reference/variable-type.html,VariableType>> _Bounds_::
+
+<<reference/variable-type.html,VariableType>> _Color_::
+
+<<reference/variable-type.html,VariableType>> _Enum_::
+
+<<reference/variable-type.html,VariableType>> _String_::
+
+<<reference/variable-type.html,VariableType>> _List_::
+
+<<reference/variable-type.html,VariableType>> _Dictionary_::
+
+<<reference/variable-type.html,VariableType>> _Asset_::
+
+<<reference/variable-type.html,VariableType>> _Object_::
+
+<<reference/variable-type.html,VariableType>> _Function_::

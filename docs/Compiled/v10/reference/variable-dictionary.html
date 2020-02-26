@@ -1,0 +1,53 @@
+<div class="sect1">
+<h2 id="reference/variable-dictionary">VariableDictionary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PiRhoSoft.Variables.VariableDictionary : <a href="#reference/i-variable-dictionary.html">IVariableDictionary</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable" target="_blank" rel="noopener">IEnumerable</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1">ICollection<sup></a>&lt;<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2">KeyValuePair</sup></a>&lt;string, string&gt;&gt;, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2" target="_blank" rel="noopener">IDictionary</a>&lt;string, string&gt;, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1">IEnumerable<sup></a>&lt;<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2">KeyValuePair</sup></a>&lt;string, string&gt;&gt;</p>
+</div>
+<div class="sect2">
+<h3 id="_description_34">Description</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_constructors_17">Constructors</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">VariableDictionary()</dt>
+<dt class="hdlist1">VariableDictionary(<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2" target="_blank" rel="noopener">IDictionary</a>&lt;string, string&gt; <em>variables</em>)</dt>
+<dd>
+<p><mark>#</mark> Public Properties</p>
+</dd>
+<dt class="hdlist1"><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IReadOnlyCollection-1" target="_blank" rel="noopener">IReadOnlyCollection</a>&lt;string&gt; <em>VariableNames</em> <em>(read only)</em> <em>(virtual)</em></dt>
+<dt class="hdlist1">int <em>Count</em> <em>(read only)</em> <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1" target="_blank" rel="noopener">ICollection</a>&lt;string&gt; <em>Keys</em> <em>(read only)</em> <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1" target="_blank" rel="noopener">ICollection</a>&lt;<a href="#reference/variable.html">Variable</a>&gt; <em>Values</em> <em>(read only)</em> <em>(virtual)</em></dt>
+<dt class="hdlist1">bool <em>IsReadOnly</em> <em>(read only)</em> <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> <em>Item</em> <em>(virtual)</em></dt>
+<dd>
+<p><mark>#</mark> Public Methods</p>
+</dd>
+<dt class="hdlist1">void LoadFrom(<a href="#reference/i-variable-dictionary.html">IVariableDictionary</a> <em>map</em>)</dt>
+<dt class="hdlist1">void SaveTo(<a href="#reference/i-variable-dictionary.html">IVariableDictionary</a> <em>map</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> GetVariable(string <em>name</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="#reference/set-variable-result.html">SetVariableResult</a> SetVariable(string <em>name</em>, <a href="#reference/variable.html">Variable</a> <em>variable</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="#reference/set-variable-result.html">SetVariableResult</a> AddVariable(string <em>name</em>, <a href="#reference/variable.html">Variable</a> <em>variable</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="#reference/set-variable-result.html">SetVariableResult</a> RemoveVariable(string <em>name</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="#reference/set-variable-result.html">SetVariableResult</a> ClearVariables() <em>(virtual)</em></dt>
+<dt class="hdlist1">bool Contains(<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2" target="_blank" rel="noopener">KeyValuePair</a>&lt;string, string&gt; <em>item</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">bool ContainsKey(string <em>key</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">bool TryGetValue(string <em>key</em>, <a href="#reference/variable&amp;.html">Variable</a> <em>value</em> <em>(out)</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">void Add(string <em>key</em>, <a href="#reference/variable.html">Variable</a> <em>value</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">void Add(<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2" target="_blank" rel="noopener">KeyValuePair</a>&lt;string, string&gt; <em>item</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">bool Remove(string <em>key</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">bool Remove(<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2" target="_blank" rel="noopener">KeyValuePair</a>&lt;string, string&gt; <em>item</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1">void Clear() <em>(virtual)</em></dt>
+<dt class="hdlist1">void CopyTo(<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2" target="_blank" rel="noopener">KeyValuePair</a>&lt;string, string&gt;[] <em>array</em>, int <em>arrayIndex</em>) <em>(virtual)</em></dt>
+<dt class="hdlist1"><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1">IEnumerator<sup></a>&lt;<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2">KeyValuePair</sup></a>&lt;string, string&gt;&gt; GetEnumerator() <em>(virtual)</em></dt>
+<dd>
+<p>&lt;&lt;&lt;</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>

@@ -1,10 +1,8 @@
 {
   "dependencies": {
+    "com.pirho.docgen": "https://github.com/pirhosoft/PiRhoDocGen.git#upm",
     "com.pirho.utilities": "https://github.com/pirhosoft/PiRhoUtilities.git#upm",
-    "com.unity.2d.sprite": "1.0.0",
     "com.unity.addressables": "1.6.0",
-    "com.unity.textmeshpro": "2.0.1",
-    "com.unity.ugui": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -38,6 +36,10 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "lock": {
+    "com.pirho.docgen": {
+      "revision": "upm",
+      "hash": "d351c278e53ca251ed5d0610ced1b96a74e75718"
+    },
     "com.pirho.utilities": {
       "revision": "upm",
       "hash": "fda5d8177a8177056f57e37aecaea2a942c02ab1"

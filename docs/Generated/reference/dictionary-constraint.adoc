@@ -1,0 +1,29 @@
+[#reference/dictionary-constraint]
+
+## DictionaryConstraint
+
+PiRhoSoft.Variables.DictionaryConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Constructors
+
+DictionaryConstraint()::
+
+DictionaryConstraint(<<reference/variable-schema.html,VariableSchema>> _schema_)::
+
+### Public Fields
+
+<<reference/variable-schema.html,VariableSchema>> _Schema_::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+string ToString() _(virtual)_::
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_) _(virtual)_::

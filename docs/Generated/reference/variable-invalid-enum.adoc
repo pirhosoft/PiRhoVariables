@@ -1,0 +1,11 @@
+[#reference/variable-invalid-enum]
+
+## InvalidEnum
+
+PiRhoSoft.Variables.InvalidEnum
+
+### Description
+
+### Values
+
+<<reference/variable-invalid-enum.html,InvalidEnum>> _Invalid_::

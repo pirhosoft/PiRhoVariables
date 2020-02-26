@@ -1,0 +1,11 @@
+[#reference/i-object-map]
+
+## IObjectMap
+
+PiRhoSoft.Variables.IObjectMap
+
+### Description
+
+### Public Methods
+
+<<reference/i-mapped-property.html,IMappedProperty>> GetProperty(string _name_) _(abstract)_::

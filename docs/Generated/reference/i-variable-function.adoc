@@ -1,0 +1,13 @@
+[#reference/i-variable-function]
+
+## IVariableFunction
+
+PiRhoSoft.Variables.IVariableFunction
+
+### Description
+
+### Public Methods
+
+int Validate(<<reference/variable.html,Variable>>[] _parameters_) _(abstract)_::
+
+<<reference/variable.html,Variable>> Invoke(<<reference/variable.html,Variable>>[] _parameters_) _(abstract)_::

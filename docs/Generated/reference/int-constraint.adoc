@@ -1,0 +1,41 @@
+[#reference/int-constraint]
+
+## IntConstraint
+
+PiRhoSoft.Variables.IntConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Static Fields
+
+int _DefaultMinimum_::
+
+int _DefaultMaximum_::
+
+### Constructors
+
+IntConstraint()::
+
+IntConstraint(Nullable<int> _minimum_, Nullable<int> _maximum_)::
+
+### Public Fields
+
+bool _HasMinimum_::
+
+bool _HasMaximum_::
+
+int _Minimum_::
+
+int _Maximum_::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+string ToString() _(virtual)_::
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_) _(virtual)_::

@@ -1,0 +1,21 @@
+[#reference/variable-schema]
+
+## VariableSchema
+
+PiRhoSoft.Variables.VariableSchema : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^]
+
+### Description
+
+### Constructors
+
+VariableSchema()::
+
+### Public Fields
+
+<<reference/variable-definition-list.html,VariableDefinitionList>> _Definitions_::
+
+### Public Methods
+
+bool IsImplementedBy(<<reference/i-variable-dictionary.html,IVariableDictionary>> _variables_, bool _exact_)::
+
+void ApplyTo(<<reference/i-variable-dictionary.html,IVariableDictionary>> _variables_)::

@@ -1,0 +1,27 @@
+[#reference/variable-function]
+
+## VariableFunction
+
+PiRhoSoft.Variables.VariableFunction : <<reference/i-variable-function.html,IVariableFunction>>
+
+### Description
+
+### Static Fields
+
+int _Valid_::
+
+int _NotFound_::
+
+int _IncorrectLength_::
+
+### Constructors
+
+VariableFunction(Delegate _d_)::
+
+### Public Methods
+
+int Validate(<<reference/variable.html,Variable>>[] _arguments_) _(virtual)_::
+
+<<reference/variable.html,Variable>> Invoke(<<reference/variable.html,Variable>>[] _arguments_) _(virtual)_::
+
+<<reference/variable.html,Variable>> UncheckedInvoke(<<reference/variable.html,Variable>>[] _arguments_)::

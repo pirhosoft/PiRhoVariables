@@ -1,0 +1,31 @@
+[#reference/aggregate-dictionary]
+
+## AggregateDictionary
+
+PiRhoSoft.Variables.AggregateDictionary : <<reference/i-variable-dictionary.html,IVariableDictionary>>
+
+### Description
+
+### Constructors
+
+AggregateDictionary()::
+
+### Public Properties
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IReadOnlyCollection-1[IReadOnlyCollection^]<string> _VariableNames_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+void AddVariables(<<reference/i-variable-dictionary.html,IVariableDictionary>> _variables_)::
+
+void RemoveVariables(<<reference/i-variable-dictionary.html,IVariableDictionary>> _variables_)::
+
+<<reference/variable.html,Variable>> GetVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> SetVariable(string _name_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> AddVariable(string _name_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> RemoveVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> ClearVariables() _(virtual)_::

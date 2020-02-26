@@ -1,0 +1,15 @@
+[#reference/serialized-variable]
+
+## SerializedVariable
+
+PiRhoSoft.Variables.SerializedVariable
+
+### Description
+
+### Constructors
+
+SerializedVariable()::
+
+### Public Fields
+
+<<reference/variable.html,Variable>> _Variable_::

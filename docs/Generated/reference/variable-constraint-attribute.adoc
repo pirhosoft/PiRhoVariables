@@ -1,0 +1,39 @@
+[#reference/variable-constraint-attribute]
+
+## VariableConstraintAttribute
+
+PiRhoSoft.Variables.VariableConstraintAttribute : Attribute
+
+### Description
+
+### Constructors
+
+VariableConstraintAttribute(<<reference/variable-type.html,VariableType>> _type_)::
+
+VariableConstraintAttribute(int _minimum_, int _maximum_)::
+
+VariableConstraintAttribute(bool _noMinimum_, int _maximum_)::
+
+VariableConstraintAttribute(int _minimum_, bool _noMaximum_)::
+
+VariableConstraintAttribute(float _minimum_, float _maximum_)::
+
+VariableConstraintAttribute(bool _noMinimum_, float _maximum_)::
+
+VariableConstraintAttribute(float _minimum_, bool _noMaximum_)::
+
+VariableConstraintAttribute(string[] _values_)::
+
+VariableConstraintAttribute(string _label_)::
+
+VariableConstraintAttribute(Type _type_)::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_::
+
+<<reference/variable-constraint.html,VariableConstraint>> _Constraint_ _(read only)_::
+
+### Public Methods
+
+<<reference/variable-definition.html,VariableDefinition>> GetDefinition(string _name_)::

@@ -1,0 +1,11 @@
+:imagesdir: manual/
+
+include::manual/global-variables-behaviour.adoc[]
+
+<<<
+
+include::manual/variables-behaviour.adoc[]
+
+<<<
+
+include::manual/variable-schema.adoc[]

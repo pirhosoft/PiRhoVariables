@@ -1,0 +1,11 @@
+[#manual/global-variables-behaviour]
+
+## Global Variables Behaviour
+
+### Fields
+
+<<manual/serialized-variable-dictionary.html,Serialized Variable Dictionary>> _Variables_::
+
+ifdef::backend-multipage_html5[]
+link:reference/global-variables-behaviour.html[Reference]
+endif::[]

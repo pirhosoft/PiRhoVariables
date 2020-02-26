@@ -1,0 +1,17 @@
+[#reference/set-variable-result]
+
+## SetVariableResult
+
+PiRhoSoft.Variables.SetVariableResult
+
+### Description
+
+### Values
+
+<<reference/set-variable-result.html,SetVariableResult>> _Success_::
+
+<<reference/set-variable-result.html,SetVariableResult>> _NotFound_::
+
+<<reference/set-variable-result.html,SetVariableResult>> _ReadOnly_::
+
+<<reference/set-variable-result.html,SetVariableResult>> _TypeMismatch_::

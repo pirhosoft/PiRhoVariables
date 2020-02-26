@@ -1,0 +1,27 @@
+[#reference/asset-constraint]
+
+## AssetConstraint
+
+PiRhoSoft.Variables.AssetConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Constructors
+
+AssetConstraint()::
+
+AssetConstraint(string _label_)::
+
+### Public Fields
+
+string _Label_::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _value_) _(virtual)_::

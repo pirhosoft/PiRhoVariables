@@ -1,0 +1,41 @@
+[#reference/float-constraint]
+
+## FloatConstraint
+
+PiRhoSoft.Variables.FloatConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Static Fields
+
+float _DefaultMinimum_::
+
+float _DefaultMaximum_::
+
+### Constructors
+
+FloatConstraint()::
+
+FloatConstraint(Nullable<float> _minimum_, Nullable<float> _maximum_)::
+
+### Public Fields
+
+bool _HasMinimum_::
+
+bool _HasMaximum_::
+
+float _Minimum_::
+
+float _Maximum_::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+string ToString() _(virtual)_::
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_) _(virtual)_::

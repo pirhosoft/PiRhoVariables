@@ -1,0 +1,31 @@
+[#reference/list-constraint]
+
+## ListConstraint
+
+PiRhoSoft.Variables.ListConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Constructors
+
+ListConstraint()::
+
+ListConstraint(<<reference/variable-type.html,VariableType>> _type_)::
+
+ListConstraint(<<reference/variable-constraint.html,VariableConstraint>> _itemConstraint_)::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+<<reference/variable-type.html,VariableType>> _ItemType_::
+
+<<reference/variable-constraint.html,VariableConstraint>> _ItemConstraint_::
+
+### Public Methods
+
+string ToString() _(virtual)_::
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_) _(virtual)_::

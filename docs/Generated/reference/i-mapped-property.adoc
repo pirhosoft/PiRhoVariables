@@ -1,0 +1,17 @@
+[#reference/i-mapped-property]
+
+## IMappedProperty
+
+PiRhoSoft.Variables.IMappedProperty
+
+### Description
+
+### Public Properties
+
+Type _PropertyType_ _(read only)_ _(abstract)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> Lookup(<<reference/variable.html,Variable>> _owner_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> Assign(<<reference/variable.html,Variable>> _owner_, <<reference/variable.html,Variable>> _value_) _(abstract)_::

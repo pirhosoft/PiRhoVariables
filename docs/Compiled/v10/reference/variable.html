@@ -1,0 +1,162 @@
+<div class="sect1">
+<h2 id="reference/variable">Variable</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PiRhoSoft.Variables.Variable : ValueType</p>
+</div>
+<div class="sect2">
+<h3 id="_description_28">Description</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_static_fields_4">Static Fields</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> <em>Empty</em></dt>
+<dd>
+<p><mark>#</mark> Static Methods</p>
+</dd>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Unbox(Object <em>obj</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Create(<a href="#reference/variable-type.html">VariableType</a> <em>type</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Create&lt;T&gt;(T <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable-type.html">VariableType</a> GetType(Type <em>type</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Bool(bool <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Int(int <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Float(float <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Vector2Int(<a href="https://docs.unity3d.com/ScriptReference/Vector2Int.html" target="_blank" rel="noopener">Vector2Int</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Vector3Int(<a href="https://docs.unity3d.com/ScriptReference/Vector3Int.html" target="_blank" rel="noopener">Vector3Int</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> RectInt(<a href="https://docs.unity3d.com/ScriptReference/RectInt.html" target="_blank" rel="noopener">RectInt</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> BoundsInt(<a href="https://docs.unity3d.com/ScriptReference/BoundsInt.html" target="_blank" rel="noopener">BoundsInt</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Vector2(<a href="https://docs.unity3d.com/ScriptReference/Vector2.html" target="_blank" rel="noopener">Vector2</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Vector3(<a href="https://docs.unity3d.com/ScriptReference/Vector3.html" target="_blank" rel="noopener">Vector3</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Vector4(<a href="https://docs.unity3d.com/ScriptReference/Vector4.html" target="_blank" rel="noopener">Vector4</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Quaternion(<a href="https://docs.unity3d.com/ScriptReference/Quaternion.html" target="_blank" rel="noopener">Quaternion</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Rect(<a href="https://docs.unity3d.com/ScriptReference/Rect.html" target="_blank" rel="noopener">Rect</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Bounds(<a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank" rel="noopener">Bounds</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Color(<a href="https://docs.unity3d.com/ScriptReference/Color.html" target="_blank" rel="noopener">Color</a> <em>value</em>)</dt>
+<dt class="hdlist1">bool IsValidEnumType(Type <em>type</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Enum(Enum <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Enum&lt;EnumType&gt;(EnumType <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> String(string <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> List(<a href="#reference/i-variable-list.html">IVariableList</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Dictionary(<a href="#reference/i-variable-dictionary.html">IVariableDictionary</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Asset(<a href="https://docs.unity3d.com/ScriptReference/AssetReference.html" target="_blank" rel="noopener">AssetReference</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Object(Object <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Function(<a href="#reference/i-variable-function.html">IVariableFunction</a> <em>value</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Load(SerializedDataReader <em>reader</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Add(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Subtract(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Multiply(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Divide(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Modulo(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Exponent(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Negate(<a href="#reference/variable.html">Variable</a> <em>value</em>)</dt>
+<dt class="hdlist1">Nullable&lt;bool&gt; IsEqual(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1">Nullable&lt;int&gt; Compare(<a href="#reference/variable.html">Variable</a> <em>left</em>, <a href="#reference/variable.html">Variable</a> <em>right</em>)</dt>
+<dt class="hdlist1">float Distance(<a href="#reference/variable.html">Variable</a> <em>from</em>, <a href="#reference/variable.html">Variable</a> <em>to</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Interpolate(<a href="#reference/variable.html">Variable</a> <em>from</em>, <a href="#reference/variable.html">Variable</a> <em>to</em>, float <em>time</em>)</dt>
+<dt class="hdlist1"><a href="#reference/variable.html">Variable</a> Lookup(<a href="#reference/variable.html">Variable</a> <em>owner</em>, <a href="#reference/variable.html">Variable</a> <em>lookup</em>)</dt>
+<dt class="hdlist1"><a href="#reference/set-variable-result.html">SetVariableResult</a> Assign(<a href="#reference/variable&amp;.html">Variable</a> <em>owner</em> <em>(ref)</em>, <a href="#reference/variable.html">Variable</a> <em>lookup</em>, <a href="#reference/variable.html">Variable</a> <em>value</em>)</dt>
+<dd>
+<p><mark>#</mark> Public Properties</p>
+</dd>
+<dt class="hdlist1">bool <em>IsValueType</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="#reference/variable-type.html">VariableType</a> <em>Type</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsEmpty</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsBool</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>AsBool</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1">int <em>AsInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsFloat</em> <em>(read only)</em></dt>
+<dt class="hdlist1">float <em>AsFloat</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsVector2Int</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Vector2Int.html" target="_blank" rel="noopener">Vector2Int</a> <em>AsVector2Int</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsVector3Int</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Vector3Int.html" target="_blank" rel="noopener">Vector3Int</a> <em>AsVector3Int</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsRectInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/RectInt.html" target="_blank" rel="noopener">RectInt</a> <em>AsRectInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsBoundsInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/BoundsInt.html" target="_blank" rel="noopener">BoundsInt</a> <em>AsBoundsInt</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsVector2</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Vector2.html" target="_blank" rel="noopener">Vector2</a> <em>AsVector2</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsVector3</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Vector3.html" target="_blank" rel="noopener">Vector3</a> <em>AsVector3</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsVector4</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Vector4.html" target="_blank" rel="noopener">Vector4</a> <em>AsVector4</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsQuaternion</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Quaternion.html" target="_blank" rel="noopener">Quaternion</a> <em>AsQuaternion</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsRect</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Rect.html" target="_blank" rel="noopener">Rect</a> <em>AsRect</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsBounds</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank" rel="noopener">Bounds</a> <em>AsBounds</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsColor</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Color.html" target="_blank" rel="noopener">Color</a> <em>AsColor</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsEnum</em> <em>(read only)</em></dt>
+<dt class="hdlist1">Enum <em>AsEnum</em> <em>(read only)</em></dt>
+<dt class="hdlist1">Type <em>EnumType</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsString</em> <em>(read only)</em></dt>
+<dt class="hdlist1">string <em>AsString</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsList</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="#reference/i-variable-list.html">IVariableList</a> <em>AsList</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsDictionary</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="#reference/i-variable-dictionary.html">IVariableDictionary</a> <em>AsDictionary</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsAsset</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/AssetReference.html" target="_blank" rel="noopener">AssetReference</a> <em>AsAsset</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsObject</em> <em>(read only)</em></dt>
+<dt class="hdlist1">Object <em>AsObject</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsNullObject</em> <em>(read only)</em></dt>
+<dt class="hdlist1">Type <em>ObjectType</em> <em>(read only)</em></dt>
+<dt class="hdlist1">bool <em>IsFunction</em> <em>(read only)</em></dt>
+<dt class="hdlist1"><a href="#reference/i-variable-function.html">IVariableFunction</a> <em>AsFunction</em> <em>(read only)</em></dt>
+<dd>
+<p><mark>#</mark> Public Methods</p>
+</dd>
+<dt class="hdlist1">Object Box()</dt>
+<dt class="hdlist1">bool Is(<a href="#reference/variable-type.html">VariableType</a> <em>type</em>)</dt>
+<dt class="hdlist1">bool Is&lt;T&gt;()</dt>
+<dt class="hdlist1">bool Is(Type <em>type</em>)</dt>
+<dt class="hdlist1">T As&lt;T&gt;()</dt>
+<dt class="hdlist1">bool TryGet&lt;T&gt;(<a href="#reference/t&amp;.html">T</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetBool(bool <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetInt(int <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetFloat(float <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetVector2Int(<a href="https://docs.unity3d.com/ScriptReference/Vector2Int.html" target="_blank" rel="noopener">Vector2Int</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetVector3Int(<a href="https://docs.unity3d.com/ScriptReference/Vector3Int.html" target="_blank" rel="noopener">Vector3Int</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetRectInt(<a href="https://docs.unity3d.com/ScriptReference/RectInt.html" target="_blank" rel="noopener">RectInt</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetBoundsInt(<a href="https://docs.unity3d.com/ScriptReference/BoundsInt.html" target="_blank" rel="noopener">BoundsInt</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetVector2(<a href="https://docs.unity3d.com/ScriptReference/Vector2.html" target="_blank" rel="noopener">Vector2</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetVector3(<a href="https://docs.unity3d.com/ScriptReference/Vector3.html" target="_blank" rel="noopener">Vector3</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetVector4(<a href="https://docs.unity3d.com/ScriptReference/Vector4.html" target="_blank" rel="noopener">Vector4</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetQuaternion(<a href="https://docs.unity3d.com/ScriptReference/Quaternion.html" target="_blank" rel="noopener">Quaternion</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetRect(<a href="https://docs.unity3d.com/ScriptReference/Rect.html" target="_blank" rel="noopener">Rect</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetBounds(<a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank" rel="noopener">Bounds</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetColor(<a href="https://docs.unity3d.com/ScriptReference/Color.html" target="_blank" rel="noopener">Color</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetEnum(Enum <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool HasEnum&lt;EnumType&gt;()</dt>
+<dt class="hdlist1">EnumType GetEnum&lt;EnumType&gt;()</dt>
+<dt class="hdlist1">bool TryGetEnum&lt;EnumType&gt;(<a href="#reference/enum-type&amp;.html">EnumType</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool HasEnum(Type <em>enumType</em>)</dt>
+<dt class="hdlist1">Enum GetEnum(Type <em>enumType</em>)</dt>
+<dt class="hdlist1">bool TryGetEnum(Type <em>enumType</em>, Enum <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetString(string <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetList(<a href="#reference/i-variable-list&amp;.html">IVariableList</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetDictionary(<a href="#reference/i-variable-dictionary&amp;.html">IVariableDictionary</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetAsset(<a href="https://docs.unity3d.com/ScriptReference/AssetReference.html" target="_blank" rel="noopener">AssetReference</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetObject(Object <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool HasObject&lt;ObjectType&gt;()</dt>
+<dt class="hdlist1">ObjectType GetObject&lt;ObjectType&gt;()</dt>
+<dt class="hdlist1">bool TryGetObject&lt;ObjectType&gt;(<a href="#reference/object-type&amp;.html">ObjectType</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool HasObject(Type <em>objectType</em>)</dt>
+<dt class="hdlist1"><a href="https://docs.unity3d.com/ScriptReference/Object.html" target="_blank" rel="noopener">Object</a> GetObject(Type <em>objectType</em>)</dt>
+<dt class="hdlist1">bool TryGetObject(Type <em>objectType</em>, <a href="https://docs.unity3d.com/ScriptReference/Object.html" target="_blank" rel="noopener">Object</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">bool TryGetFunction(<a href="#reference/i-variable-function&amp;.html">IVariableFunction</a> <em>value</em> <em>(out)</em>)</dt>
+<dt class="hdlist1">string ToString() <em>(virtual)</em></dt>
+<dt class="hdlist1">void Save(SerializedDataWriter <em>writer</em>)</dt>
+<dd>
+<p>&lt;&lt;&lt;</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
