@@ -72,6 +72,11 @@
 	flex-grow: 1;
 }
 
+.pirho-variable__container.pirho-frame
+{
+	margin: 1px 0px;
+}
+
 .pirho-variable__dictionary__label
 {
 	-unity-font-style: bold;

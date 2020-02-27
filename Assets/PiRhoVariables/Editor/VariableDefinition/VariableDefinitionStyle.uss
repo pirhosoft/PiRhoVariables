@@ -121,3 +121,8 @@
 {
 	margin: 1px 0px;
 }
+
+.pirho-variable-definition__value.pirho-serialized-variable
+{
+	margin: 1px 0px;
+}
