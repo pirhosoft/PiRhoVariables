@@ -22,8 +22,10 @@ namespace PiRhoSoft.Variables
 
 		public IntConstraint(int? minimum, int? maximum)
 		{
-			Minimum = minimum.HasValue ? minimum.Value : DefaultMinimum;
-			Maximum = maximum.HasValue ? maximum.Value : DefaultMaximum;
+			HasMinimum = minimum.HasValue;
+			HasMaximum = maximum.HasValue;
+			Minimum = minimum ?? DefaultMinimum;
+			Maximum = maximum ?? DefaultMaximum;
 		}
 
 		public override string ToString()
