@@ -23,8 +23,8 @@ namespace PiRhoSoft.Variables
 		public FloatConstraint(float? minimum, float? maximum)
 		{
 			HasMinimum = minimum.HasValue;
-			Minimum = minimum ?? DefaultMinimum;
 			HasMaximum = maximum.HasValue;
+			Minimum = minimum ?? DefaultMinimum;
 			Maximum = maximum ?? DefaultMaximum;
 		}
 

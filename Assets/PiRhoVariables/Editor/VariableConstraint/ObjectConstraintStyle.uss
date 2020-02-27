@@ -1,0 +1,8 @@
+﻿.pirho-object-constraint
+{
+}
+
+.pirho-object-constraint__type
+{
+	margin: 1px 0px;
+}

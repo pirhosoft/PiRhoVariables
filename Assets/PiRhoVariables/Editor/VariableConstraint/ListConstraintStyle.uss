@@ -1,7 +1,7 @@
 ﻿.pirho-list-constraint
 {
 }
+
 .pirho-list-constraint__type
 {
-	margin: 1px 0px;
 }
