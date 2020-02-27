@@ -21,11 +21,11 @@ namespace PiRhoSoft.Variables.Editor
 		public const string NameFieldUssClassName = UssClassName + "__name-field";
 		public const string TypeUssClassName = UssClassName + "__type";
 		public const string ConstraintUssClassName = UssClassName + "__constraint";
+		public const string ValueUssClassName = UssClassName + "__value";
 
 		#endregion
 
 		private readonly VariableDefinition _definition;
-
 		private readonly SerializedProperty _nameProperty;
 		private readonly SerializedProperty _typeProperty;
 		private SerializedProperty _constraintProperty;
@@ -187,7 +187,7 @@ namespace PiRhoSoft.Variables.Editor
 		private SerializedVariableField CreateValue(SerializedProperty property, VariableDefinition definition)
 		{
 			var field = new SerializedVariableField(property, definition);
-			field.SetFieldLabel(null);
+			field.AddToClassList(ValueUssClassName);
 			return field;
 		}
 	}

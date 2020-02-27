@@ -11,8 +11,6 @@ namespace PiRhoSoft.Variables
 		public override VariableType Type => VariableType.Object;
 
 		[SerializeField]
-		[NoLabel]
-		[TypePicker(typeof(Object), true)]
 		private string _objectType;
 
 		public Type ObjectType
