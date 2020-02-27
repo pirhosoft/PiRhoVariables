@@ -13,5 +13,12 @@
 	"dependencies": {
 		"com.unity.addressables": "1.1.10",
 		"com.pirho.utilities": "2.1.0"
-	}
+	},
+	"samples": [
+		{
+			"displayName": "PiRhoVariables Samples",
+			"description": "Sample scene and scripts to show how PiRhoVaribales can be used",
+			"path": "Samples~/PiRhoVariablesSamples"
+		}
+	]
 }

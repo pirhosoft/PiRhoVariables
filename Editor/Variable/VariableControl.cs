@@ -84,7 +84,8 @@ namespace PiRhoSoft.Variables.Editor
 		{
 			if (_definition != null && !_definition.IsValid(value))
 			{
-				this.SendChangeEvent(_value, _definition.Generate());
+				var valid = _definition.Generate();
+				schedule.Execute(() => this.SendChangeEvent(_value, valid)).StartingIn(0);
 				return false;
 			}
 
@@ -179,8 +180,8 @@ namespace PiRhoSoft.Variables.Editor
 				var type = (VariableType)evt.newValue;
 				var value = Variable.Create(type);
 
-				this.SendChangeEvent(_value, value);
 				evt.StopImmediatePropagation();
+				this.SendChangeEvent(_value, value);
 			});
 
 			Add(_emptyField);
