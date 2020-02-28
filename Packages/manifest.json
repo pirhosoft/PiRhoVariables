@@ -36,13 +36,13 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "lock": {
-    "com.pirho.docgen": {
-      "revision": "upm",
-      "hash": "d351c278e53ca251ed5d0610ced1b96a74e75718"
-    },
     "com.pirho.utilities": {
       "revision": "upm",
-      "hash": "11424d6c3b7a0076fc62b16b91f94c4db4bac42a"
+      "hash": "b9a07002aaa719967010c25644d0bc0463996a8a"
+    },
+    "com.pirho.docgen": {
+      "revision": "upm",
+      "hash": "900b3d9c2773fb6e35ac7e2dd6de98a79b5764ef"
     }
   }
 }

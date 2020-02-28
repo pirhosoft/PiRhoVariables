@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="h-100">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PiRho Variables Documentation</title>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/foundation.min.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="article-style.css">
+	</head>
+
+	<body class="m-0 p-0 h-100 roboto background-color dark-text">
+
+		<!-- Sidebar -->
+		<nav class="sidebar light-background d-flex flex-column shadow">
+
+			<!-- Project Logo -->
+			<a href="overview.html" class="d-block"><img src="project-logo.png" /></a>
+
+			<!-- Version -->
+			<div class="version mx-2 mt-2">
+				<select class="form-control form-control-sm" id="version-select">
+					<option value="v10">Current Version (1.0)</option>
+				</select>
+			</div>
+
+			<!-- Search -->
+			<div class="search m-2">
+				<input class="form-control form-control-sm" id="search-input" type="search" placeholder="Search">
+			</div>
+			<div class="toc" id="table-of-contents"></div>
+		</nav>
+
+		<!-- Topbar -->
+		<header>
+			<nav class="navbar dark-background light-text shadow">
+				<button class="menu-button btn mr-2" id="menu-button"><i class="fas fa-bars"></i></button>
+				<div class="navbar-brand mb-0 h1 ml-2 mr-auto">
+					<span id="title-text"></span>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Page -->
+		<article>
+			<div id="article-content"></div>
+			<a id="next-button" href>Next <i class="fas fa-angle-double-right"></i></a>
+		</article>
+
+		<!-- Footer -->
+		<footer>
+			<div class="mt-4 p-3 d-flex justify-content-around align-items-center dark-background grey-text">
+				<span class="logo"><img class="h-50" src="company-logo.png" /></a></span>
+				<span class="copyright">COPYRIGHT © 2020</span>
+				<span class="links">
+					<a id="trademark-button" data-toggle="modal" data-target="#unity-trademark">Built with Unity</a>
+				</span>
+			</div>
+		</footer>
+
+		<!-- Sidebar Overlay -->
+		<div id="menu-overlay">
+		</div>
+
+		<!-- Unity Modal -->
+		<!--See https://unity3d.com/legal/branding_trademarks-->
+		<div class="modal fade" id="unity-trademark" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Unity Trademark</h5>
+					<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						These materials are not sponsored by or affiliated with Unity Technologies or its affiliates. “Unity” is a trademark or registered trademark of <a href="https://unity.com/">Unity Technologies</a> or its affiliates in the U.S. and elsewhere.
+					</p>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+		<script type="text/javascript" src="elasticlunr.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+	</body>
+</html>
