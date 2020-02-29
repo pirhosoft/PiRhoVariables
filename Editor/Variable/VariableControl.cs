@@ -685,7 +685,7 @@ namespace PiRhoSoft.Variables.Editor
 
 		private void CreateAsset()
 		{
-			_assetField = new ObjectField { objectType = typeof(ScriptableObject) };
+			_assetField = new ObjectField { objectType = typeof(Object) };
 			//_assetField = new ObjectPickerField(typeof(ScriptableObject));
 			_assetField.AddToClassList(FieldUssClassName);
 			_assetField.RegisterCallback<ChangeEvent<Object>>(evt =>
