@@ -26,7 +26,7 @@ namespace PiRhoSoft.Variables
 
 		public override bool IsValid(Variable value)
 		{
-			return true; // TODO
+			return value.IsAsset;
 		}
 	}
 }
