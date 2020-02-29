@@ -180,8 +180,8 @@ namespace PiRhoSoft.Variables.Editor
 				var type = (VariableType)evt.newValue;
 				var value = Variable.Create(type);
 
-				evt.StopImmediatePropagation();
 				this.SendChangeEvent(_value, value);
+				evt.StopImmediatePropagation();
 			});
 
 			Add(_emptyField);
