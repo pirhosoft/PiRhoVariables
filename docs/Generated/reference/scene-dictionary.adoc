@@ -1,0 +1,35 @@
+[#reference/scene-dictionary]
+
+## SceneDictionary
+
+PiRhoSoft.Variables.SceneDictionary : <<reference/i-variable-dictionary.html,IVariableDictionary>>
+
+### Description
+
+### Static Fields
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IReadOnlyCollection-1[IReadOnlyCollection^]<string> _Names_::
+
+### Static Methods
+
+void RefreshNames()::
+
+### Constructors
+
+SceneDictionary()::
+
+### Public Properties
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IReadOnlyCollection-1[IReadOnlyCollection^]<string> _VariableNames_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> GetVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> SetVariable(string _name_, <<reference/variable.html,Variable>> _value_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> AddVariable(string _name_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> RemoveVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> ClearVariables() _(virtual)_::

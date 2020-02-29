@@ -1,0 +1,7 @@
+[#manual/log-descriptions]
+## Log Descriptions
+
+### Warnings
+
+
+### Errors

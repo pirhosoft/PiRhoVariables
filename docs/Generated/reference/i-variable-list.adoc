@@ -1,0 +1,25 @@
+[#reference/i-variable-list]
+
+## IVariableList
+
+PiRhoSoft.Variables.IVariableList
+
+### Description
+
+### Public Properties
+
+int _VariableCount_ _(read only)_ _(abstract)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> GetVariable(int _index_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> SetVariable(int _index_, <<reference/variable.html,Variable>> _variable_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> AddVariable(<<reference/variable.html,Variable>> _variable_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> InsertVariable(int _index_, <<reference/variable.html,Variable>> _variable_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> RemoveVariable(int _index_) _(abstract)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> ClearVariables() _(abstract)_::

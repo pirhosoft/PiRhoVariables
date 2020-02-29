@@ -1,0 +1,11 @@
+[#reference/serialized-variable-dictionary]
+
+## SerializedVariableDictionary
+
+PiRhoSoft.Variables.SerializedVariableDictionary : <<reference/variable-dictionary.html,VariableDictionary>>
+
+### Description
+
+### Constructors
+
+SerializedVariableDictionary()::

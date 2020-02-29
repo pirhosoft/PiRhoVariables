@@ -1,0 +1,63 @@
+[#reference/variable-dictionary]
+
+## VariableDictionary
+
+PiRhoSoft.Variables.VariableDictionary : <<reference/i-variable-dictionary.html,IVariableDictionary>>, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable[IEnumerable^], https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1[ICollection^]<https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string>>, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2[IDictionary^]<string, string>, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string>>
+
+### Description
+
+### Constructors
+
+VariableDictionary()::
+
+VariableDictionary(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2[IDictionary^]<string, string> _variables_)::
+
+### Public Properties
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IReadOnlyCollection-1[IReadOnlyCollection^]<string> _VariableNames_ _(read only)_ _(virtual)_::
+
+int _Count_ _(read only)_ _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1[ICollection^]<string> _Keys_ _(read only)_ _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1[ICollection^]<<<reference/variable.html,Variable>>> _Values_ _(read only)_ _(virtual)_::
+
+bool _IsReadOnly_ _(read only)_ _(virtual)_::
+
+<<reference/variable.html,Variable>> _Item_ _(virtual)_::
+
+### Public Methods
+
+void LoadFrom(<<reference/i-variable-dictionary.html,IVariableDictionary>> _map_)::
+
+void SaveTo(<<reference/i-variable-dictionary.html,IVariableDictionary>> _map_)::
+
+<<reference/variable.html,Variable>> GetVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> SetVariable(string _name_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> AddVariable(string _name_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> RemoveVariable(string _name_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> ClearVariables() _(virtual)_::
+
+bool Contains(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string> _item_) _(virtual)_::
+
+bool ContainsKey(string _key_) _(virtual)_::
+
+bool TryGetValue(string _key_, <<reference/variable&.html,Variable>> _value_ _(out)_) _(virtual)_::
+
+void Add(string _key_, <<reference/variable.html,Variable>> _value_) _(virtual)_::
+
+void Add(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string> _item_) _(virtual)_::
+
+bool Remove(string _key_) _(virtual)_::
+
+bool Remove(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string> _item_) _(virtual)_::
+
+void Clear() _(virtual)_::
+
+void CopyTo(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string>[] _array_, int _arrayIndex_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1[IEnumerator^]<https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2[KeyValuePair^]<string, string>> GetEnumerator() _(virtual)_::

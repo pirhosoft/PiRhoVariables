@@ -1,0 +1,11 @@
+[#manual/variable-schema]
+
+## Variable Schema
+
+### Fields
+
+<<manual/variable-definition-list.html,Variable Definition List>> _Definitions_::
+
+ifdef::backend-multipage_html5[]
+link:reference/variable-schema.html[Reference]
+endif::[]

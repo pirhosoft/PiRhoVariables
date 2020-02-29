@@ -1,0 +1,17 @@
+{
+  "OutputFolder": "Compiled",
+  "SinglePageHtmlFiles": [],
+  "MultipageHtmlFiles": [
+    "Generated\\multipage.adoc"
+  ],
+  "PdfFiles": [],
+  "RawFiles": [
+    "Generated\\table-of-contents.html"
+  ],
+  "Version": "v10",
+  "GenerateOffline": false,
+  "OfflineFolder": "",
+  "OfflineTemplate": "",
+  "GenerateSearch": true,
+  "CopyImages": true
+}

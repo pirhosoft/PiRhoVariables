@@ -1,0 +1,17 @@
+[#reference/variable-overload]
+
+## VariableOverload
+
+PiRhoSoft.Variables.VariableOverload : <<reference/i-variable-function.html,IVariableFunction>>
+
+### Description
+
+### Constructors
+
+VariableOverload(Delegate[] _functions_)::
+
+### Public Methods
+
+int Validate(<<reference/variable.html,Variable>>[] _parameters_) _(virtual)_::
+
+<<reference/variable.html,Variable>> Invoke(<<reference/variable.html,Variable>>[] _parameters_) _(virtual)_::

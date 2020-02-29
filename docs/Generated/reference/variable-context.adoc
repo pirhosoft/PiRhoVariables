@@ -1,0 +1,25 @@
+[#reference/variable-context]
+
+## VariableContext
+
+PiRhoSoft.Variables.VariableContext : <<reference/aggregate-dictionary.html,AggregateDictionary>>
+
+### Description
+
+### Static Fields
+
+string _SceneName_::
+
+<<reference/variable-dictionary.html,VariableDictionary>> _GlobalDictionary_::
+
+<<reference/scene-dictionary.html,SceneDictionary>> _SceneDictionary_::
+
+<<reference/variable-context.html,VariableContext>> _Default_::
+
+### Constructors
+
+VariableContext()::
+
+### Public Methods
+
+void AddDefaultVariables()::

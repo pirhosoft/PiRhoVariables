@@ -1,0 +1,17 @@
+[#reference/object-map-1]
+
+## ObjectMap
+
+PiRhoSoft.Variables.ObjectMap<__ObjectType__> : <<reference/object-map.html,ObjectMap>>
+
+### Description
+
+### Static Methods
+
+void Add<PropertyType>(string _propertyName_, Func<ObjectType, ObjectType> _lookup_, Action<ObjectType, ObjectType> _assign_)::
+
+void Add<PropertyType>(string _propertyName_, Func<ObjectType, ObjectType> _lookup_)::
+
+### Constructors
+
+ObjectMap()::

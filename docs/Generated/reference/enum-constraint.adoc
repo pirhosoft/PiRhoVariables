@@ -1,0 +1,27 @@
+[#reference/enum-constraint]
+
+## EnumConstraint
+
+PiRhoSoft.Variables.EnumConstraint : <<reference/variable-constraint.html,VariableConstraint>>
+
+### Description
+
+### Constructors
+
+EnumConstraint()::
+
+EnumConstraint(Type _type_)::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(virtual)_::
+
+Type _EnumType_::
+
+### Public Methods
+
+string ToString() _(virtual)_::
+
+<<reference/variable.html,Variable>> Generate() _(virtual)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _variable_) _(virtual)_::

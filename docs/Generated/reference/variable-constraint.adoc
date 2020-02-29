@@ -1,0 +1,25 @@
+[#reference/variable-constraint]
+
+## VariableConstraint
+
+PiRhoSoft.Variables.VariableConstraint
+
+### Description
+
+### Static Methods
+
+<<reference/variable-constraint.html,VariableConstraint>> Create(<<reference/variable-type.html,VariableType>> _type_)::
+
+### Public Properties
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_ _(abstract)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> Generate() _(abstract)_::
+
+bool IsValid(<<reference/variable.html,Variable>> _value_) _(abstract)_::
+
+### Protected Constructors
+
+VariableConstraint()::

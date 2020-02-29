@@ -1,0 +1,15 @@
+[#reference/global-variables-behaviour]
+
+## GlobalVariablesBehaviour
+
+PiRhoSoft.Variables.GlobalVariablesBehaviour : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+GlobalVariablesBehaviour()::
+
+### Public Fields
+
+<<reference/serialized-variable-dictionary.html,SerializedVariableDictionary>> _Variables_::

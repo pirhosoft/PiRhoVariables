@@ -1,0 +1,11 @@
+[#reference/variable-function-exception]
+
+## VariableFunctionException
+
+PiRhoSoft.Variables.VariableFunctionException : Exception
+
+### Description
+
+### Constructors
+
+VariableFunctionException()::

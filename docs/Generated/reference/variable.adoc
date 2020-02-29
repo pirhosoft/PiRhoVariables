@@ -1,0 +1,277 @@
+[#reference/variable]
+
+## Variable
+
+PiRhoSoft.Variables.Variable : ValueType
+
+### Description
+
+### Static Fields
+
+<<reference/variable.html,Variable>> _Empty_::
+
+### Static Methods
+
+<<reference/variable.html,Variable>> Unbox(Object _obj_)::
+
+<<reference/variable.html,Variable>> Create(<<reference/variable-type.html,VariableType>> _type_)::
+
+<<reference/variable.html,Variable>> Create<T>(T _value_)::
+
+<<reference/variable-type.html,VariableType>> GetType(Type _type_)::
+
+<<reference/variable.html,Variable>> Bool(bool _value_)::
+
+<<reference/variable.html,Variable>> Int(int _value_)::
+
+<<reference/variable.html,Variable>> Float(float _value_)::
+
+<<reference/variable.html,Variable>> Vector2Int(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _value_)::
+
+<<reference/variable.html,Variable>> Vector3Int(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _value_)::
+
+<<reference/variable.html,Variable>> RectInt(https://docs.unity3d.com/ScriptReference/RectInt.html[RectInt^] _value_)::
+
+<<reference/variable.html,Variable>> BoundsInt(https://docs.unity3d.com/ScriptReference/BoundsInt.html[BoundsInt^] _value_)::
+
+<<reference/variable.html,Variable>> Vector2(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _value_)::
+
+<<reference/variable.html,Variable>> Vector3(https://docs.unity3d.com/ScriptReference/Vector3.html[Vector3^] _value_)::
+
+<<reference/variable.html,Variable>> Vector4(https://docs.unity3d.com/ScriptReference/Vector4.html[Vector4^] _value_)::
+
+<<reference/variable.html,Variable>> Quaternion(https://docs.unity3d.com/ScriptReference/Quaternion.html[Quaternion^] _value_)::
+
+<<reference/variable.html,Variable>> Rect(https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _value_)::
+
+<<reference/variable.html,Variable>> Bounds(https://docs.unity3d.com/ScriptReference/Bounds.html[Bounds^] _value_)::
+
+<<reference/variable.html,Variable>> Color(https://docs.unity3d.com/ScriptReference/Color.html[Color^] _value_)::
+
+bool IsValidEnumType(Type _type_)::
+
+<<reference/variable.html,Variable>> Enum(Enum _value_)::
+
+<<reference/variable.html,Variable>> Enum<EnumType>(EnumType _value_)::
+
+<<reference/variable.html,Variable>> String(string _value_)::
+
+<<reference/variable.html,Variable>> List(<<reference/i-variable-list.html,IVariableList>> _value_)::
+
+<<reference/variable.html,Variable>> Dictionary(<<reference/i-variable-dictionary.html,IVariableDictionary>> _value_)::
+
+<<reference/variable.html,Variable>> Asset(https://docs.unity3d.com/ScriptReference/AssetReference.html[AssetReference^] _value_)::
+
+<<reference/variable.html,Variable>> Object(Object _value_)::
+
+<<reference/variable.html,Variable>> Function(<<reference/i-variable-function.html,IVariableFunction>> _value_)::
+
+<<reference/variable.html,Variable>> Load(SerializedDataReader _reader_)::
+
+<<reference/variable.html,Variable>> Add(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Subtract(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Multiply(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Divide(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Modulo(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Exponent(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+<<reference/variable.html,Variable>> Negate(<<reference/variable.html,Variable>> _value_)::
+
+Nullable<bool> IsEqual(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+Nullable<int> Compare(<<reference/variable.html,Variable>> _left_, <<reference/variable.html,Variable>> _right_)::
+
+float Distance(<<reference/variable.html,Variable>> _from_, <<reference/variable.html,Variable>> _to_)::
+
+<<reference/variable.html,Variable>> Interpolate(<<reference/variable.html,Variable>> _from_, <<reference/variable.html,Variable>> _to_, float _time_)::
+
+<<reference/variable.html,Variable>> Lookup(<<reference/variable.html,Variable>> _owner_, <<reference/variable.html,Variable>> _lookup_)::
+
+<<reference/set-variable-result.html,SetVariableResult>> Assign(<<reference/variable&.html,Variable>> _owner_ _(ref)_, <<reference/variable.html,Variable>> _lookup_, <<reference/variable.html,Variable>> _value_)::
+
+### Public Properties
+
+bool _IsValueType_ _(read only)_::
+
+<<reference/variable-type.html,VariableType>> _Type_ _(read only)_::
+
+bool _IsEmpty_ _(read only)_::
+
+bool _IsBool_ _(read only)_::
+
+bool _AsBool_ _(read only)_::
+
+bool _IsInt_ _(read only)_::
+
+int _AsInt_ _(read only)_::
+
+bool _IsFloat_ _(read only)_::
+
+float _AsFloat_ _(read only)_::
+
+bool _IsVector2Int_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _AsVector2Int_ _(read only)_::
+
+bool _IsVector3Int_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _AsVector3Int_ _(read only)_::
+
+bool _IsRectInt_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/RectInt.html[RectInt^] _AsRectInt_ _(read only)_::
+
+bool _IsBoundsInt_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/BoundsInt.html[BoundsInt^] _AsBoundsInt_ _(read only)_::
+
+bool _IsVector2_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _AsVector2_ _(read only)_::
+
+bool _IsVector3_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector3.html[Vector3^] _AsVector3_ _(read only)_::
+
+bool _IsVector4_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector4.html[Vector4^] _AsVector4_ _(read only)_::
+
+bool _IsQuaternion_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Quaternion.html[Quaternion^] _AsQuaternion_ _(read only)_::
+
+bool _IsRect_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _AsRect_ _(read only)_::
+
+bool _IsBounds_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Bounds.html[Bounds^] _AsBounds_ _(read only)_::
+
+bool _IsColor_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _AsColor_ _(read only)_::
+
+bool _IsEnum_ _(read only)_::
+
+Enum _AsEnum_ _(read only)_::
+
+Type _EnumType_ _(read only)_::
+
+bool _IsString_ _(read only)_::
+
+string _AsString_ _(read only)_::
+
+bool _IsList_ _(read only)_::
+
+<<reference/i-variable-list.html,IVariableList>> _AsList_ _(read only)_::
+
+bool _IsDictionary_ _(read only)_::
+
+<<reference/i-variable-dictionary.html,IVariableDictionary>> _AsDictionary_ _(read only)_::
+
+bool _IsAsset_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/AssetReference.html[AssetReference^] _AsAsset_ _(read only)_::
+
+bool _IsObject_ _(read only)_::
+
+Object _AsObject_ _(read only)_::
+
+bool _IsNullObject_ _(read only)_::
+
+Type _ObjectType_ _(read only)_::
+
+bool _IsFunction_ _(read only)_::
+
+<<reference/i-variable-function.html,IVariableFunction>> _AsFunction_ _(read only)_::
+
+### Public Methods
+
+Object Box()::
+
+bool Is(<<reference/variable-type.html,VariableType>> _type_)::
+
+bool Is<T>()::
+
+bool Is(Type _type_)::
+
+T As<T>()::
+
+bool TryGet<T>(<<reference/t&.html,T>> _value_ _(out)_)::
+
+bool TryGetBool(bool _value_ _(out)_)::
+
+bool TryGetInt(int _value_ _(out)_)::
+
+bool TryGetFloat(float _value_ _(out)_)::
+
+bool TryGetVector2Int(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _value_ _(out)_)::
+
+bool TryGetVector3Int(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _value_ _(out)_)::
+
+bool TryGetRectInt(https://docs.unity3d.com/ScriptReference/RectInt.html[RectInt^] _value_ _(out)_)::
+
+bool TryGetBoundsInt(https://docs.unity3d.com/ScriptReference/BoundsInt.html[BoundsInt^] _value_ _(out)_)::
+
+bool TryGetVector2(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _value_ _(out)_)::
+
+bool TryGetVector3(https://docs.unity3d.com/ScriptReference/Vector3.html[Vector3^] _value_ _(out)_)::
+
+bool TryGetVector4(https://docs.unity3d.com/ScriptReference/Vector4.html[Vector4^] _value_ _(out)_)::
+
+bool TryGetQuaternion(https://docs.unity3d.com/ScriptReference/Quaternion.html[Quaternion^] _value_ _(out)_)::
+
+bool TryGetRect(https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _value_ _(out)_)::
+
+bool TryGetBounds(https://docs.unity3d.com/ScriptReference/Bounds.html[Bounds^] _value_ _(out)_)::
+
+bool TryGetColor(https://docs.unity3d.com/ScriptReference/Color.html[Color^] _value_ _(out)_)::
+
+bool TryGetEnum(Enum _value_ _(out)_)::
+
+bool HasEnum<EnumType>()::
+
+EnumType GetEnum<EnumType>()::
+
+bool TryGetEnum<EnumType>(<<reference/enum-type&.html,EnumType>> _value_ _(out)_)::
+
+bool HasEnum(Type _enumType_)::
+
+Enum GetEnum(Type _enumType_)::
+
+bool TryGetEnum(Type _enumType_, Enum _value_ _(out)_)::
+
+bool TryGetString(string _value_ _(out)_)::
+
+bool TryGetList(<<reference/i-variable-list&.html,IVariableList>> _value_ _(out)_)::
+
+bool TryGetDictionary(<<reference/i-variable-dictionary&.html,IVariableDictionary>> _value_ _(out)_)::
+
+bool TryGetAsset(https://docs.unity3d.com/ScriptReference/AssetReference.html[AssetReference^] _value_ _(out)_)::
+
+bool TryGetObject(Object _value_ _(out)_)::
+
+bool HasObject<ObjectType>()::
+
+ObjectType GetObject<ObjectType>()::
+
+bool TryGetObject<ObjectType>(<<reference/object-type&.html,ObjectType>> _value_ _(out)_)::
+
+bool HasObject(Type _objectType_)::
+
+https://docs.unity3d.com/ScriptReference/Object.html[Object^] GetObject(Type _objectType_)::
+
+bool TryGetObject(Type _objectType_, https://docs.unity3d.com/ScriptReference/Object.html[Object^] _value_ _(out)_)::
+
+bool TryGetFunction(<<reference/i-variable-function&.html,IVariableFunction>> _value_ _(out)_)::
+
+string ToString() _(virtual)_::
+
+void Save(SerializedDataWriter _writer_)::

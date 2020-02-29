@@ -1,0 +1,21 @@
+[#reference/object-map]
+
+## ObjectMap
+
+PiRhoSoft.Variables.ObjectMap : <<reference/i-object-map.html,IObjectMap>>
+
+### Description
+
+### Static Methods
+
+<<reference/i-object-map.html,IObjectMap>> Get(Type _type_)::
+
+void Register(Type _type_, <<reference/i-object-map.html,IObjectMap>> _map_)::
+
+### Public Methods
+
+void Add(string _name_, <<reference/i-mapped-property.html,IMappedProperty>> _property_)::
+
+### Protected Constructors
+
+ObjectMap()::

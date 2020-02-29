@@ -1,0 +1,55 @@
+[#reference/variable-list]
+
+## VariableList
+
+PiRhoSoft.Variables.VariableList : https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable[IEnumerable^], https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<<<reference/variable.html,Variable>>>, <<reference/i-variable-list.html,IVariableList>>, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1[ICollection^]<<<reference/variable.html,Variable>>>, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<<<reference/variable.html,Variable>>>
+
+### Description
+
+### Constructors
+
+VariableList()::
+
+VariableList(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<<<reference/variable.html,Variable>>> _variables_)::
+
+### Public Properties
+
+int _VariableCount_ _(read only)_ _(virtual)_::
+
+int _Count_ _(read only)_ _(virtual)_::
+
+bool _IsReadOnly_ _(read only)_ _(virtual)_::
+
+<<reference/variable.html,Variable>> _Item_ _(virtual)_::
+
+### Public Methods
+
+<<reference/variable.html,Variable>> GetVariable(int _index_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> SetVariable(int _index_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> AddVariable(<<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> InsertVariable(int _index_, <<reference/variable.html,Variable>> _variable_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> RemoveVariable(int _index_) _(virtual)_::
+
+<<reference/set-variable-result.html,SetVariableResult>> ClearVariables() _(virtual)_::
+
+int IndexOf(<<reference/variable.html,Variable>> _item_) _(virtual)_::
+
+bool Contains(<<reference/variable.html,Variable>> _item_) _(virtual)_::
+
+void Add(<<reference/variable.html,Variable>> _item_) _(virtual)_::
+
+void Insert(int _index_, <<reference/variable.html,Variable>> _item_) _(virtual)_::
+
+bool Remove(<<reference/variable.html,Variable>> _item_) _(virtual)_::
+
+void RemoveAt(int _index_) _(virtual)_::
+
+void Clear() _(virtual)_::
+
+void CopyTo(<<reference/variable.html,Variable>>[] _array_, int _arrayIndex_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1[IEnumerator^]<<<reference/variable.html,Variable>>> GetEnumerator() _(virtual)_::

@@ -1,0 +1,8 @@
+[#reference/i-variable-hierarchy]
+
+## IVariableHierarchy
+
+PiRhoSoft.Variables.IVariableHierarchy : <<reference/i-variable-dictionary.html,IVariableDictionary>>
+
+### Description
+

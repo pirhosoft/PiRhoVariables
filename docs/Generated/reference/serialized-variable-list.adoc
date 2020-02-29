@@ -1,0 +1,11 @@
+[#reference/serialized-variable-list]
+
+## SerializedVariableList
+
+PiRhoSoft.Variables.SerializedVariableList : <<reference/variable-list.html,VariableList>>
+
+### Description
+
+### Constructors
+
+SerializedVariableList()::
