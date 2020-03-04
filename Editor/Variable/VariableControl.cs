@@ -686,9 +686,8 @@ namespace PiRhoSoft.Variables.Editor
 		private void CreateAsset()
 		{
 			_assetField = new ObjectField { objectType = typeof(Object) };
-			//_assetField = new ObjectPickerField(typeof(ScriptableObject));
 			_assetField.AddToClassList(FieldUssClassName);
-			_assetField.RegisterCallback<ChangeEvent<Object>>(evt =>
+			_assetField.RegisterValueChangedCallback(evt =>
 			{
 				var value = Variable.Asset(new AssetReference(AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(evt.newValue))));
 				this.SendChangeEvent(_value, value);
@@ -700,7 +699,7 @@ namespace PiRhoSoft.Variables.Editor
 
 		private void RefreshAsset()
 		{
-			_assetField.SetValueWithoutNotify(_value.GetObject<Object>());
+			_assetField.SetValueWithoutNotify(AssetDatabase.LoadAssetAtPath<Object>(AssetDatabase.GUIDToAssetPath(_value.AsAsset.AssetGUID)));
 		}
 
 		#endregion
@@ -712,7 +711,7 @@ namespace PiRhoSoft.Variables.Editor
 			var objectType = (_definition?.Constraint as ObjectConstraint)?.ObjectType ?? typeof(Object);
 			_objectField = new ObjectField { objectType = objectType };
 			_objectField.AddToClassList(FieldUssClassName);
-			_objectField.RegisterCallback<ChangeEvent<Object>>(evt =>
+			_objectField.RegisterValueChangedCallback(evt =>
 			{
 				var value = Variable.Object(evt.newValue);
 				this.SendChangeEvent(_value, value);
