@@ -12,7 +12,7 @@ namespace PiRhoSoft.Variables
 
 		private void Awake()
 		{
-			var parent = transform.parent?.GetComponentInParent<IVariableHierarchy>() as IVariableDictionary;
+			var parent = transform.parent ? transform.parent.GetComponentInParent<IVariableHierarchy>() as IVariableDictionary : VariableContext.Default;
 			_hierarchy = new ChildDictionary(parent ?? VariableContext.Default, Variables);
 		}
 
@@ -25,5 +25,23 @@ namespace PiRhoSoft.Variables
 		public SetVariableResult ClearVariables() => _hierarchy.ClearVariables();
 
 		#endregion
+	}
+
+	public class VariableAccess : IVariableDictionary
+	{
+		private readonly IVariableDictionary _variables;
+
+		public VariableAccess(MonoBehaviour sibling)
+		{
+			var variables = sibling.GetComponentInParent<IVariableHierarchy>() as IVariableDictionary;
+			_variables = new ChildDictionary(variables ?? VariableContext.Default);
+		}
+
+		public IReadOnlyCollection<string> VariableNames => _variables.VariableNames;
+		public SetVariableResult AddVariable(string name, Variable variable) => _variables.AddVariable(name, variable);
+		public SetVariableResult ClearVariables() => _variables.ClearVariables();
+		public Variable GetVariable(string name) => _variables.GetVariable(name);
+		public SetVariableResult RemoveVariable(string name) => _variables.RemoveVariable(name);
+		public SetVariableResult SetVariable(string name, Variable variable) => _variables.SetVariable(name, variable);
 	}
 }
