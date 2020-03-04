@@ -29,12 +29,15 @@ namespace PiRhoSoft.Variables
 
 	public class VariableAccess : IVariableDictionary
 	{
+		public const string ThisName = "this";
+
 		private readonly IVariableDictionary _variables;
 
-		public VariableAccess(MonoBehaviour sibling)
+		public VariableAccess(Component owner)
 		{
-			var variables = sibling.GetComponentInParent<IVariableHierarchy>() as IVariableDictionary;
-			_variables = new ChildDictionary(variables ?? VariableContext.Default);
+			var parent = owner.GetComponentInParent<IVariableHierarchy>() as IVariableDictionary;
+			_variables = new ChildDictionary(parent ?? VariableContext.Default);
+			_variables.AddVariable(ThisName, Variable.Object(owner));
 		}
 
 		public IReadOnlyCollection<string> VariableNames => _variables.VariableNames;
