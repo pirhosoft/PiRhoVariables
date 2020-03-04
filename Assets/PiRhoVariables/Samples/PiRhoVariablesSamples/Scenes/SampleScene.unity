@@ -166,5 +166,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Variable:
     _data:
-      _content: AAAAAA==
+      _content: EwAAAAEgMmNkYTk5MGUyNDIzYmJmNDg5MmU2NTkwYmEwNTY3Mjk=
       _references: []
+  Int:
+    _data:
+      _content: AgAAAAAAAAA=
+      _references: []
+  Float:
+    _data:
+      _content: AwAAAAAAAAA=
+      _references: []
+  Object:
+    _data:
+      _content: FAAAAAAAAA==
+      _references: []
+  List:
+    _data:
+      _content: EQAAAAAAAAA=
+      _references: []
+  Definition:
+    Name: 
+    _type: 0
+    _constraint:
+      id: 0
+    _defaultValue:
+      _data:
+        _content: 
+        _references: []
+  references:
+    version: 1
+    00000000:
+      type: {class: , ns: , asm: }
