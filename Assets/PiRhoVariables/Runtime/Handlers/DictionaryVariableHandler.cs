@@ -54,9 +54,18 @@ namespace PiRhoSoft.Variables
 		protected internal override SetVariableResult Assign(ref Variable owner, Variable lookup, Variable value)
 		{
 			if (lookup.TryGetString(out var s))
-				return owner.AsDictionary.SetVariable(s, value);
+			{
+				var dict = owner.AsDictionary;
+				var result = dict.SetVariable(s, value);
+				if (result == SetVariableResult.NotFound)
+					result = dict.AddVariable(s, value);
+
+				return result;
+			}
 			else
+			{
 				return SetVariableResult.TypeMismatch;
+			}
 		}
 
 		protected internal override bool? IsEqual(Variable left, Variable right)

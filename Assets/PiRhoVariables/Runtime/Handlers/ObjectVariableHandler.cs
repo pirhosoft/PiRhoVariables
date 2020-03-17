@@ -64,6 +64,9 @@ namespace PiRhoSoft.Variables
 
 			if (owner.TryGetObject<Component>(out var component))
 			{
+				if (name == GameObjectName)
+					return Variable.Object(component.gameObject);
+					
 				var sibling = component.gameObject.GetComponent(name);
 				if (sibling != null)
 					return Variable.Object(sibling);
