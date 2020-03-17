@@ -66,7 +66,7 @@ namespace PiRhoSoft.Variables
 			{
 				var sibling = component.gameObject.GetComponent(name);
 				if (sibling != null)
-					return Variable.Object(component);
+					return Variable.Object(sibling);
 			}
 
 			var map = ObjectMap.Get(owner.ObjectType);
