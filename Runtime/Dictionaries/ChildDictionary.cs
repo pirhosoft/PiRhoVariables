@@ -62,7 +62,7 @@ namespace PiRhoSoft.Variables
 				return _child.SetVariable(name, variable);
 		}
 
-		public SetVariableResult AddVariable(string name, Variable variable) => _child.SetVariable(name, variable);
+		public SetVariableResult AddVariable(string name, Variable variable) => _child.AddVariable(name, variable);
 		public SetVariableResult RemoveVariable(string name) => _child.RemoveVariable(name);
 		public SetVariableResult ClearVariables() => _child.ClearVariables();
 
